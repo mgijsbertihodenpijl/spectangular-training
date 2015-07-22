@@ -1,0 +1,12 @@
+{
+    "items": [
+        {
+            "uid": 3,
+            "name": "Mobile development"
+        },
+        {
+            "uid": 4,
+            "name": "UX design"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "start": "2016-06-09T18:00:00.000Z",
+    "end": "2016-06-10T18:00:00.000Z",
+    "category": {
+        "uid": 1,
+        "name": "Training Java programming"
+    },
+    "type": {
+        "uid": 1,
+        "name": "Training Go programming"
+    },
+    "description": "test1 out",
+    "region": "out",
+    "km": 60,
+    "city": "Amsterdam"
+}

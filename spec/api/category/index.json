@@ -1,0 +1,12 @@
+{
+    "items": [
+        {
+            "uid": 1,
+            "name": "Interne trainingen"
+        },
+        {
+            "uid": 2,
+            "name": "Externe trainingen"
+        }
+    ]
+}

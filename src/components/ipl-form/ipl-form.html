@@ -1,0 +1,63 @@
+
+<div class="progress-center" ng-hide="isLoaded">
+    <material-progress-circular material-mode="indeterminate"></material-progress-circular>
+</div>
+<div class="form-fields" ng-show="isLoaded">
+
+    <div material-icon="alert" class="material-warn gids-error" ng-if="errors.start">
+        No start date {{errors | json: 2 }}
+    </div>
+    <material-button material-icon="alert" class="material-warn gids-error" ng-if="errors.end">
+        No end date
+    </material-button>
+    <material-button material-icon="alert" class="material-warn gids-error" ng-if="errors.category">
+        No category
+    </material-button>
+    <material-button material-icon="alert" class="material-warn gids-error" ng-if="errors.type">
+        No type
+    </material-button>
+    <material-button material-icon="alert" class="material-warn gids-error" ng-if="errors.region">
+        No region
+    </material-button>
+    <material-button material-icon="alert" class="material-warn gids-error" ng-if="errors.km">
+        No km
+    </material-button>
+    <material-button material-icon="alert" class="material-warn gids-error" ng-if="errors.city">
+        No city
+    </material-button>
+    <material-button material-icon="alert" class="material-warn gids-error" ng-if="errors.agree">
+        No agreement
+    </material-button>
+
+    <!-- start -->
+    <div layout="row">
+        <material-datefield flex="2" label="Start *" ng-model="certificate.start.date" datepicker-config="startDateConfig"></material-datefield>
+        <material-selectfield flex="1" ng-model="certificate.start.hours" label="Uren" options="time.hours" ></material-selectfield>
+        <material-selectfield flex="1" ng-model="certificate.start.minutes" label="Minuten" options="time.minutes" ></material-selectfield>
+    </div>
+    <!-- end -->
+    <div layout="row">
+        <material-datefield flex="2" label="Einde *" ng-model="certificate.end.date" datepicker-config="endDateConfig" ></material-datefield>
+        <material-selectfield flex="1" ng-model="certificate.end.hours" label="Uren" options="time.hours" ></material-selectfield>
+        <material-selectfield flex="1" ng-model="certificate.end.minutes" label="Minuten" options="time.minutes" ></material-selectfield>
+    </div>
+    <!-- category -->
+    <material-selectfield ng-model="certificate.category.uid" label="Categorie *" options="categories" ></material-selectfield>
+    <!-- type -->
+    <material-selectfield ng-disabled="!certificate.category.uid" ng-model="certificate.type.uid" label="Type *" options="types" ></material-selectfield>
+    <!-- area -->
+    <material-selectfield ng-model="certificate.region" label="Regio *" options="regions" ></material-selectfield>
+
+    <!-- KM -->
+    <material-textfield ng-model="certificate.km" ng-show="certificate.region == 'out'" label="Kilometers *" type="number" ></material-textfield>
+    <!-- city -->
+    <material-textfield ng-model="certificate.city" ng-show="certificate.region == 'out'" label="Plaats *" test-id="10" ></material-textfield>
+    <!-- description -->
+    <material-textarea ng-model="certificate.description" label="Omschrijving" test-id="11" ></material-textarea>
+    <material-checkbox ng-model="certificate.agree" >Agree with conditions ?</material-checkbox>
+
+</div>
+<material-buttonbar ng-show="isLoaded">
+    <material-button class="material-primary" ng-click="close()">Annuleren</material-button>
+    <material-button class="material-success material-raised" ng-click="submit()">Opslaan</material-button>
+</material-buttonbar>

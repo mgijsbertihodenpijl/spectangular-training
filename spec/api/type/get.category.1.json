@@ -1,0 +1,12 @@
+{
+    "items": [
+        {
+            "uid": "1",
+            "name": "Training Java programming"
+        },
+        {
+            "uid": "2",
+            "name": "Training Go programming"
+        }
+    ]
+}

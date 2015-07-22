@@ -1,0 +1,80 @@
+#### CATEGORY ####
+
+## INDEX
+-  request:
+        url: ^/category
+        method: GET
+   response:
+        headers:
+            content-type: application/json
+        file: spec/api/category/index.json
+#### TYPE ####
+
+## INDEX
+
+
+# filter category 1
+-  request:
+        url: ^/type
+        query:
+            category: 1
+        method: GET
+   response:
+        headers:
+            content-type: application/json
+        file: spec/api/type/get.category.1.json
+
+# filter category 2
+-  request:
+        url: ^/type
+        query:
+            category: 2
+        method: GET
+   response:
+        headers:
+            content-type: application/json
+        file: spec/api/type/get.category.2.json
+        latency: 1000
+
+#### CERTIFICATE #### (registration)
+
+## CREATE
+
+# in
+-   request:
+        url: ^/certificate
+        method:
+            - POST
+            - PUT
+        file: spec/api/certificate/post.request.in.json
+        body: '{"error": true}'
+    response: 
+        headers: 
+            content-type: application/json
+        file: spec/api/certificate/post.response.in.json
+
+# out
+-   request:
+        url: ^/certificate
+        method:
+            - POST
+            - PUT
+        file: spec/api/certificate/post.request.out.json
+    response: 
+        headers: 
+            content-type: application/json
+        file: spec/api/certificate/post.response.out.json
+
+### TRAINING ####
+
+-   request:
+        url: ^/training
+        method:
+            - GET
+        file: spec/api/training/get.request.json
+        body: '{"error": true}'
+    response:
+        headers:
+            content-type: application/json
+        file: spec/api/training/get.response.json
+
