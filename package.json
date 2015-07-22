@@ -1,20 +1,20 @@
 {
-  "name": "IPL",
+  "name": "Spectangular training",
   "version": "1.0.0",
-  "description": "GIDS - IPL",
+  "description": "Application for training in Spectangular",
   "scripts": {
     "build": "npm install -d && grunt build",
     "start": "grunt start"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.schubergphilis.com:LWZ/ipl.git"
+    "url": "git@github.com:mgijsbertihodenpijl/spectangular-training.git"
   },
   "keywords": [
-    "GIDS",
-    "IPL"
+    "Spectangular",
+    "trainging"
   ],
-  "author": "vverhaagen@schubergphilis.com",
+  "author": "mgijsbertihodenpijl@schubergphilis.com",
   "license": "SBP",
   "devDependencies": {
     "express": "^4.12.4",
@@ -31,7 +31,7 @@
     "grunt-nodemon": "^0.4.0",
     "grunt-sbp-qa": "0.0.36",
     "read-yaml": "^1.0.0",
-    "stubby": "^0.2.11",
+    "stubby": "git@github.com:mgijsbertihodenpijl/stubby4node.git",
     "taas-page-objects":  "0.0.9"
   }
 }
