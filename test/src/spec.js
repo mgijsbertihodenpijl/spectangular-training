@@ -14,9 +14,6 @@ describe('Demo of buttons', function () {
   var buttonSelector = 'material-gridlist material-button.lms-add-right-corner';
   var formSelector = '[ui-view=\'ipl-form\']';
 
-  function match(el, match,selector){
-      expect(el.element(by.css(selector)).getText()).toMatch(match);
-  }
 
   beforeEach(function () {
     Spectangular.loadPageAndWait(location, buttonSelector);
@@ -29,22 +26,15 @@ describe('Demo of buttons', function () {
       selector: formSelector,
       data: formData.in
     });
-    browser.sleep(2000);
     Spectangular.button({selector: '[ng-click=\"submit()\"]'}).click();
-    browser.sleep(2000);
-    match()
-
   });
 
-  //xit('[2] wil ik een nieuwe training voor regio Buiten registreren ', function () {
-  //  Spectangular.form({
-  //    selector: formSelector,
-  //    data: formData.out
-  //  });
-    //browser.sleep(2000);
-    //Spectangular.button({text: 'opslaan'}).click();
-    //browser.sleep(2000);
-    //validate(expectedDescriptionOut);
-  //});
+  it('[2] wil ik een nieuwe training voor regio Buiten registreren ', function () {
+    Spectangular.form({
+      selector: formSelector,
+      data: formData.out
+    });
+    Spectangular.button({selector: '[ng-click=\"submit()\"]'}).click();
+  });
 
 });

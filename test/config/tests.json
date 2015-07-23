@@ -10,7 +10,7 @@
     {"model":"certificate.type.uid", "value":"Training Java programming", "type": "selectfield"},
     {"model":"certificate.region","value": "Binnen", "type": "selectfield"},
     {"model":"certificate.description","value":"test1 out", "type": "textarea"},
-    {"model":"certificate.agree","value": false, "type" : "checkbox"}
+    {"model":"certificate.agree","value": true, "type" : "checkbox"}
   ],
   "out":[
     {"model":"certificate.start.date","value": "2015-09-12", "type" : "datefield"},
