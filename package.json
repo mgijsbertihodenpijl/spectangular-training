@@ -31,7 +31,6 @@
     "grunt-nodemon": "^0.4.0",
     "grunt-sbp-qa": "0.0.36",
     "read-yaml": "^1.0.0",
-    "stubby": "git@github.com:mgijsbertihodenpijl/stubby4node.git",
-    "taas-page-objects":  "0.0.9"
+    "stubby": "git@github.com:mgijsbertihodenpijl/stubby4node.git"
   }
 }

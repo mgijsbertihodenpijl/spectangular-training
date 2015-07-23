@@ -1,0 +1,30 @@
+{
+  "in":[
+    {"model":"certificate.start.date","value": "2015-09-12", "type" : "datefield"},
+    {"model":"certificate.start.hours","value":"18", "type": "selectfield"},
+    {"model":"certificate.start.minutes","value":"20","type": "selectfield"},
+    {"model":"certificate.end.date","value": "2015-10-17" ,"type": "datefield"},
+    {"model":"certificate.end.hours", "value":"18", "type": "selectfield" },
+    {"model":"certificate.end.minutes", "value":"05", "type": "selectfield"},
+    {"model":"certificate.category.uid", "value": "Interne trainingen", "type": "selectfield"},
+    {"model":"certificate.type.uid", "value":"Training Java programming", "type": "selectfield"},
+    {"model":"certificate.region","value": "Binnen", "type": "selectfield"},
+    {"model":"certificate.description","value":"test1 out", "type": "textarea"},
+    {"model":"certificate.agree","value": false, "type" : "checkbox"}
+  ],
+  "out":[
+    {"model":"certificate.start.date","value": "2015-09-12", "type" : "datefield"},
+    {"model":"certificate.start.hours","value":"18", "type": "selectfield"},
+    {"model":"certificate.start.minutes","value":"20","type": "selectfield"},
+    {"model":"certificate.end.date","value": "2015-10-17" ,"type": "datefield"},
+    {"model":"certificate.end.hours", "value":"18", "type": "selectfield" },
+    {"model":"certificate.end.minutes", "value":"05", "type": "selectfield"},
+    {"model":"certificate.category.uid", "value": "Interne trainingen", "type": "selectfield"},
+    {"model":"certificate.type.uid", "value":"Training Java programming", "type": "selectfield"},
+    {"model":"certificate.region","value": "Buiten", "type": "selectfield"},
+    {"model":"certificate.km", "value":"60", "type": "textfield"},
+    {"model":"certificate.city","value":"Amsterdam","type": "textfield" },
+    {"model":"certificate.description","value":"test1 out", "type": "textarea"},
+    {"model":"certificate.agree","value": true, "type" : "checkbox"}
+  ]
+}
