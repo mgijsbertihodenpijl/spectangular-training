@@ -45,6 +45,6 @@ describe('Demo of buttons', function () {
     //Spectangular.button({text: 'opslaan'}).click();
     //browser.sleep(2000);
     //validate(expectedDescriptionOut);
-  });
+  //});
 
 });
