@@ -16,7 +16,7 @@ describe('Demo of menu buttons', function () {
     });
 
     it('should open menu in Basic Usage and click on redial', function () {
-        //Exercise 7: Select the menu button in the Basic Usage section, click on 'redial' options and click
+        //Exercise 8: Select the menu button in the Basic Usage section, click on 'redial' options and click
         // on the button in the dialog with text 'That was easy'
     });
 });
