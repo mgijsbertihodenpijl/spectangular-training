@@ -20,6 +20,12 @@ The source code is now transpiled (babel)in the dist folder as ECMA5 source code
 **Important!** The transpiled code in the dist folder is also committed! Make sure you always transpile your changes
 before committing changes.
 
+# Install Chrome driver (with protractor)
+`./node_modules/protractor/bin/webdriver-manager update`
+
+# Start Chrome driver (with protractor)
+`./node_modules/protractor/bin/webdriver-manager start`
+
 # Chrome with direct connect
 
 Configure conf.js 
